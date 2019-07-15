@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "no-constant-condition": true,
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }],
+    "import-name": false,
+    "no-duplicate-imports": false,
+    "align": [
+      true,
+      "elements",
+      "members",
+      "parameters",
+      "statements"
+    ],
+    "strict-boolean-expressions": [
+      true,
+      "allow-null-union",
+      "allow-undefined-union",
+      "allow-string",
+      "allow-number",
+      "allow-boolean-or-undefined"
+    ],
+    "unnecessary-bind": true,
+    "no-console": false,
+    "promise-function-async": true,
+    "no-magic-numbers": [true, -1, 0, 1, 2, 3, 1000]
+  },
+  "linterOptions": {
+    "exclude": [
+      "src/**/*.json",
+      "version.json",
+      "typings/**"
+    ]
+  }
+}
